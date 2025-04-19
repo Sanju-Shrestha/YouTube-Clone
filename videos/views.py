@@ -56,7 +56,7 @@ def saved_videos(request):
     return render(request, 'videos/saved_videos.html', {'videos': videos})
 
 
-@login_required
+
 def search_videos(request):
     videos = []
     if request.method == 'GET' and 'query' in request.GET:
